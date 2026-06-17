@@ -1,0 +1,68 @@
+{
+    "classifier_activation_layers": {
+        "llama2_7b_chat_hf": [
+            "model.layers.0",
+            "model.layers.15",
+            "model.layers.31"
+        ],
+        "Llama-2-13b-hf": [
+            "model.layers.0",
+            "model.layers.19",
+            "model.layers.39"
+        ],
+        "Meta-Llama-3-8B-Instruct": [
+            "model.layers.0",
+            "model.layers.15",
+            "model.layers.31"
+        ],
+        "Qwen1.5-7B-Chat": [
+            "model.layers.0",
+            "model.layers.15",
+            "model.layers.31"
+        ],
+        "Mistral-7B-Instruct-v0.2": [
+            "model.layers.0",
+            "model.layers.15",
+            "model.layers.31"
+        ],
+        "gemma-2-9b-it": [
+            "model.layers.0",
+            "model.layers.20",
+            "model.layers.41"
+        ],
+        "gemma-2-2b-it": [
+            "model.layers.0",
+            "model.layers.12",
+            "model.layers.25"
+        ]
+    },
+    "loss_fn_reduction": "mean",
+    "input_generation_config": {
+        "n_samples": 70,
+        "generation_kwargs": {
+            "do_sample": true,
+            "min_new_tokens": 1,
+            "max_new_tokens": 75
+        },
+        "tokenizer_kwargs": {
+            "max_length": 75
+        },
+        "batch_size": 70
+    },
+    "cache": true,
+    "cache_reset_interval": -1,
+    "optimizer_kwargs": {
+        "lr": 0.0003,
+        "weight_decay": 0.000001
+    },
+    "scheduler": "constant",
+    "scheduler_kwargs": {
+        "div_factor": 50,
+        "final_div_factor": 2
+    },
+    "batch_size": 10,
+    "input_ds_batch_size": 64,
+    "classifier_batch_size": 140,
+    "cls_inputs_per_sample": 1,
+    "dynamic_input_length": true
+}

@@ -1,0 +1,7 @@
+{
+    "save_top_k": 1,
+    "monitor": "loss/val",
+    "mode": "min",
+    "early_stopping_patience": 50,
+    "save_last": false
+}

@@ -1,0 +1,7 @@
+{
+    "experiment_name": "",
+    "project_name": "BackdoorID",
+    "log_dir": "logs",
+    "disabled": true,
+    "logger": "wandb"
+}

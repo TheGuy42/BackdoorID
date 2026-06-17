@@ -1,0 +1,64 @@
+{
+    "model_configs": {
+        "llama2_7b_chat_hf": {
+            "model_name_or_path": "meta-llama/Llama-2-7b-chat-hf",
+            "tokenizer_name_or_path": "meta-llama/Llama-2-7b-chat-hf",
+            "use_fast_tokenizer": true,
+            "apply_chat_template": true,
+            "chat_template_args": {},
+            "additional_generation_kwargs": {
+                "do_sample": true,
+                "max_new_tokens": 130
+            },
+            "tokenizer_kwargs": {"padding_side": "left"}
+        },
+        "Llama-2-13b-hf": {
+            "model_name_or_path": "meta-llama/Llama-2-13b-hf",
+            "tokenizer_name_or_path": "meta-llama/Llama-2-13b-hf",
+            "use_fast_tokenizer": true,
+            "apply_chat_template": false,
+            "chat_template_args": {},
+            "additional_generation_kwargs": {
+                "do_sample": true,
+                "max_new_tokens": 130
+            },
+            "tokenizer_kwargs": {"padding_side": "left"}
+        },
+        "Meta-Llama-3-8B-Instruct": {
+            "model_name_or_path": "meta-llama/Meta-Llama-3-8B-Instruct",
+            "tokenizer_name_or_path": "meta-llama/Meta-Llama-3-8B-Instruct",
+            "use_fast_tokenizer": true,
+            "apply_chat_template": true,
+            "chat_template_args": {},
+            "additional_generation_kwargs": {
+                "do_sample": true,
+                "max_new_tokens": 130
+            },
+            "tokenizer_kwargs": {"padding_side": "left"}
+        },
+        "Qwen1.5-7B-Chat": {
+            "model_name_or_path": "Qwen/Qwen1.5-7B-Chat",
+            "tokenizer_name_or_path": "Qwen/Qwen1.5-7B-Chat",
+            "use_fast_tokenizer": true,
+            "apply_chat_template": true,
+            "chat_template_args": {},
+            "additional_generation_kwargs": {
+                "do_sample": true,
+                "max_new_tokens": 130
+            },
+            "tokenizer_kwargs": {"padding_side": "left"}
+        },
+        "Mistral-7B-Instruct-v0.2": {
+            "model_name_or_path": "mistralai/Mistral-7B-Instruct-v0.2",
+            "tokenizer_name_or_path": "mistralai/Mistral-7B-Instruct-v0.2",
+            "use_fast_tokenizer": true,
+            "apply_chat_template": true,
+            "chat_template_args": {},
+            "additional_generation_kwargs": {
+                "do_sample": true,
+                "max_new_tokens": 130
+            },
+            "tokenizer_kwargs": {"padding_side": "left"}
+        }
+    }
+}
